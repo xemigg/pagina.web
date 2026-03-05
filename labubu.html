@@ -1,0 +1,94 @@
+<! DOCTYPE HTML>
+<HTML lang=“es”>
+<HEAD> 
+
+    <TITLE>LABUBU</TITLE> 
+<META HTTP-EQUIV="Refresh" CONTENT="360"> 
+    
+    <!-- fondo -->
+    
+    <style>
+body {
+    background-image: url('labubu%20fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+    </style>
+
+<p align=center> <font size=6 color=darkred>🧸LABUBU🧸</font><br>
+    
+    <!-- video-->
+    
+    <br><video src=video1.mp4 id="temon"
+           type= "video/mp4" width=70% autoplay="true" controls>
+     </video>
+    <br><br>
+    
+    <!-- boton play -->
+    
+    <button onclick="velocidad(1)" type="button">▶️</button>
+    
+    <script>
+    var vi=document.getElementById('temon');
+    function velocidad(p)
+        {
+            vi.playbackRate=p;
+        }
+</script>
+    
+    <!-- boton stop -->
+    
+    <button onclick="velocidad(0)" type="button">⏸️</button>
+    
+    <script>
+    var vi=document.getElementById('temon');
+    function velocidad(p)
+        {
+            vi.playbackRate=p;
+        }
+</script>
+    
+        <!-- boton silenciar -->
+    
+    <button id="btnMute">🔇</button>
+
+    <script>
+        const video = document.getElementById("temon");
+        const btnMute = document.getElementById("btnMute");
+
+        btnMute.addEventListener("click", () => {
+            
+            video.muted = !video.muted;
+
+            
+            btnMute.textContent = video.muted ? "🔊" : "🔇";
+        });
+    </script>
+    
+    <!-- boton x2 -->
+    
+        <button onclick="velocidad(2)" type="button">2️⃣</button>
+    
+    <script>
+    var vi=document.getElementById('temon');
+    function velocidad(p)
+        {
+            vi.playbackRate=p;
+        }
+</script>
+    
+    <!-- boton x4 -->
+    
+    <button onclick="velocidad(4)" type="button">4️⃣</button>
+    
+    <script>
+    var vi=document.getElementById('temon');
+    function velocidad(p)
+        {
+            vi.playbackRate=p;
+        }
+</script>
+
+    </BODY> 
+</HTML>
